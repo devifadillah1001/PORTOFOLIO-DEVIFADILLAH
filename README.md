@@ -1,2 +1,636 @@
-# Portofolio-DeviFadillah
-Portofolio milik Devi Fadillah
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Devi Fadillah</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <!-- ================= INTRO ANIMATION ================= -->
+
+<div id="intro">
+
+    <!-- Background -->
+    <div class="intro-bg"></div>
+
+    <!-- Blur Circle -->
+    <div class="circle"></div>
+
+    <!-- Glow -->
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+
+    <!-- Content -->
+    <div class="intro-content">
+
+        <h1 class="hello">你好!</h1>
+
+        <div class="line-box">
+            <div class="line"></div>
+        </div>
+
+        <h1 class="myname">
+            Welcome
+            <span>to My Portfolio</span>
+        </h1>
+
+    </div>
+
+</div>
+
+<!-- ================= END INTRO ================= -->
+<div id="website"></div>
+<!-- Home -->
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#tentang" style="--i:2">About</a>
+            <a href="#pendidikan" style="--i:3">Education</a>
+            <a href="#skills" style="--i:4">Skills</a>
+            <a href="#project" style="--i:5">Project</a>
+            <a href="#sertif" style="--i:6">Certificate</a>
+            <a href="#kontak" style="--i:7">Contact</a>
+        </nav>
+        
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="home-title">
+
+            <h1 class="outline">DEVI</h1> <h2 class="solid">FADILLAH</h2>
+
+            <div class="title-line"></div>
+
+
+            
+        </div>             
+            <div class="home-sci">
+                <a href="https://github.com/devifadillah1001" style="--i:8"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/dvfdllh_0110?igsh=MXN2eTFrbjVhYTNvZQ==" style="--i:9"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.me/message/DTP5TZT6P37UI1" style="--i:10"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.tiktok.com/@devifadillah5?_r=1&_t=ZS-977gkVdWmgP" style="--i:11"><i class='bx bxl-tiktok'></i></a>
+            </div>
+            <!-- Memanggil Fungsi Pop Up CV Modern -->
+            <button class="btn-box" type="button" onclick="openCvModal()">Click Me</button>
+        </div>
+    </section>
+
+    <!-- Struktur Pop Up Modal Untuk CV (Aman & Tidak Merusak Struktur Web) -->
+    <div id="cvModal" class="cv-modal">
+        <div class="cv-modal-content">
+            <span class="close-modal" onclick="closeCvModal()">&times;</span>
+            <img src="CV.png" alt="Foto Devi Fadillah">
+        </div>
+    </div>
+
+<!-- ABOUT -->
+
+    <section class="about" id="tentang">
+        <h2 class="heading">About <span>Me</span></h2>
+        
+        <div class="about-container">
+            <div class="about-img">
+                <img src="foto.jpeg" alt="Foto Devi Fadillah">
+            </div>
+            <div class="about-content">
+                <p>Halo, Saya adalah Devi Fadillah, mahasiswa Program Studi Informatika di Universitas Satya Terra Bhinneka. Saya memiliki minat dalam bidang teknologi informasi, desain Grafis menggunakan Photoshop, dan pengembangan website. Saya merupakan pribadi yang disiplin, bertanggung jawab, serta memiliki semangat belajar yang tinggi. Saya senang mempelajari hal-hal baru dan terus mengembangkan kemampuan baik secara akademik maupun non-akademik. Melalui pendidikan dan berbagai pelatihan yang telah saya ikuti, saya berupaya meningkatkan keterampilan untuk mempersiapkan diri menghadapi dunia kerja profesional.</p>
+            <br>
+            <div class="age-simple">
+                <span class="age-number">18+</span>
+                <span class="age-label">Usia</span>
+            </div>
+            </div>
+            
+        </div>
+    </section>
+
+<!-- EDUCATION -->
+
+    <section class="education" id="pendidikan">
+        <h2 class="heading">Education</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="edu-dot"></div>
+                <div class="edu-date">2016 - 2021</div>
+                <h3>SD NEGERI 060948</h3>
+            </div>
+            <div class="education-item">
+                <div class="edu-dot"></div>
+                <div class="edu-date">2021 - 2023</div>
+                <h3>SMP NEGERI 5 MEDAN</h3>
+            </div>
+            <div class="education-item">
+                <div class="edu-dot"></div>
+                <div class="edu-date">2023 - 2025</div>
+                <h3>SMA NEGERI 9 MEDAN</h3>
+            </div>
+            <div class="education-item">
+                <div class="edu-dot"></div>
+                <div class="edu-date">2025 - Sekarang</div>
+                <h3>S1 INFORMATIKA</h3>
+                <p>UNIVERSITAS SATYA TERRA BHINNEKA</p>
+            </div>
+        </div>
+    </section>
+
+<!-- SKILLS -->
+
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Pengembangan Website</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-paint'></i>
+                <h3>Desain Grafis dan Pengelolahan Foto</h3>
+                <p>Adobe Photoshop CS 4</p>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-paint'></i>
+                <h3>Desain Grafis Berbasis Vektor</h3>
+                <p>Adobe Illustrator CS</p>
+                <p>CorelDRAW X4</p>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-paint'></i>
+                <h3>Tata Letak dan Desain Publikasi</h3>
+                <p>Adobe Indesign CS 4</p>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-laptop'></i>
+                <h3>Tools</h3>
+                <p>Visual Studio Code</p>
+            </div>
+            <div class="skills-box">
+                <i class='bx bx-globe'></i>
+                <h3>Language</h3>
+                <p>English, Mandarin</p>
+            </div>
+        </div>
+    </section>
+
+<!-- PROJECT     -->
+
+<section class="project" id="project">
+
+    <h2 class="heading">My <span>Project</span></h2>
+
+    <div class="instagram-project">
+
+        <!-- CARD 1 -->
+        <div class="insta-card">
+
+            <!-- HEADER -->
+            <div class="insta-top">
+                <div class="profile">
+                    <div class="profile-circle">DF</div>
+                    <span>CorelDRAW</span>
+                </div>
+
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+
+            <!-- IMAGE -->
+            <img src="lomba corel.jpg" alt="">
+
+            <!-- ICON -->
+            <div class="insta-icons">
+
+                <div class="left-icons">
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-message-rounded'></i>
+                    <i class='bx bx-send'></i>
+                </div>
+
+                <i class='bx bx-bookmark'></i>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="insta-card">
+
+            <div class="insta-top">
+                <div class="profile">
+                    <div class="profile-circle">DF</div>
+                    <span>CorelDRAW</span>
+                </div>
+
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+
+            <img src="seee.jpg" alt="">
+
+            <div class="insta-icons">
+
+                <div class="left-icons">
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-message-rounded'></i>
+                    <i class='bx bx-send'></i>
+                </div>
+
+                <i class='bx bx-bookmark'></i>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="insta-card">
+
+            <div class="insta-top">
+                <div class="profile">
+                    <div class="profile-circle">DF</div>
+                    <span>Ilustrator</span>
+                </div>
+
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+
+            <img src="ilustrator.png" alt="">
+
+            <div class="insta-icons">
+
+                <div class="left-icons">
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-message-rounded'></i>
+                    <i class='bx bx-send'></i>
+                </div>
+
+                <i class='bx bx-bookmark'></i>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="insta-card">
+
+            <div class="insta-top">
+                <div class="profile">
+                    <div class="profile-circle">DF</div>
+                    <span>Photoshop</span>
+                </div>
+
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+
+            <img src="Kotak.png" alt="">
+
+            <div class="insta-icons">
+
+                <div class="left-icons">
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-message-rounded'></i>
+                    <i class='bx bx-send'></i>
+                </div>
+
+                <i class='bx bx-bookmark'></i>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="insta-card">
+
+            <div class="insta-top">
+                <div class="profile">
+                    <div class="profile-circle">DF</div>
+                    <span>Ilustrator</span>
+                </div>
+
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+
+            <img src="mario.png" alt="">
+
+            <div class="insta-icons">
+
+                <div class="left-icons">
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-message-rounded'></i>
+                    <i class='bx bx-send'></i>
+                </div>
+
+                <i class='bx bx-bookmark'></i>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="insta-card">
+
+            <div class="insta-top">
+                <div class="profile">
+                    <div class="profile-circle">DF</div>
+                    <span>Indesign</span>
+                </div>
+
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+
+            <img src="mobil.png" alt="">
+
+            <div class="insta-icons">
+
+                <div class="left-icons">
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-message-rounded'></i>
+                    <i class='bx bx-send'></i>
+                </div>
+
+                <i class='bx bx-bookmark'></i>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="insta-card">
+
+            <div class="insta-top">
+                <div class="profile">
+                    <div class="profile-circle">DF</div>
+                    <span>Photoshop</span>
+                </div>
+
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+
+            <img src="Design Baju.png" alt="">
+
+            <div class="insta-icons">
+
+                <div class="left-icons">
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-message-rounded'></i>
+                    <i class='bx bx-send'></i>
+                </div>
+
+                <i class='bx bx-bookmark'></i>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 8 -->
+<div class="insta-card">
+
+    <div class="insta-top">
+        <div class="profile">
+            <div class="profile-circle">DF</div>
+            <span>Pengembangan Website</span>
+        </div>
+
+        <i class='bx bx-dots-horizontal-rounded'></i>
+    </div>
+
+    <!-- Gambar bisa diklik -->
+    <a href="https://devifadillah1001.github.io/Sistem-Pendataan-Orangutan-Haven_DeviFadillah_/" target="_blank">
+        <img src="Proyek.jpeg" alt="Project Website">
+    </a>
+
+    <div class="insta-icons">
+
+        <div class="left-icons">
+            <i class='bx bx-heart'></i>
+            <i class='bx bx-message-rounded'></i>
+            <i class='bx bx-send'></i>
+        </div>
+
+        <i class='bx bx-bookmark'></i>
+
+    </div>
+
+</div>
+
+        <!-- CARD 9 -->
+        <div class="insta-card">
+
+            <div class="insta-top">
+                <div class="profile">
+                    <div class="profile-circle">DF</div>
+                    <span>Ilustrator</span>
+                </div>
+
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+
+            <img src="sketsa orang.png" alt="">
+
+            <div class="insta-icons">
+
+                <div class="left-icons">
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-message-rounded'></i>
+                    <i class='bx bx-send'></i>
+                </div>
+
+                <i class='bx bx-bookmark'></i>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 10 -->
+        <div class="insta-card">
+
+            <div class="insta-top">
+                <div class="profile">
+                    <div class="profile-circle">DF</div>
+                    <span>Photoshop</span>
+                </div>
+
+                <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+
+            <img src="bingkai.png" alt="">
+
+            <div class="insta-icons">
+
+                <div class="left-icons">
+                    <i class='bx bx-heart'></i>
+                    <i class='bx bx-message-rounded'></i>
+                    <i class='bx bx-send'></i>
+                </div>
+
+                <i class='bx bx-bookmark'></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CERTIFICATE -->
+
+    <!-- CERTIFICATE -->
+<section class="sertifikat" id="sertif">
+
+    <h2 class="heading">Certificate</h2>
+
+    <div class="sertifikat-container">
+
+        <!-- CARD 1 -->
+        <div class="sertifikat-box">
+            <img src="Sertifikat MOS-devi.jpeg" alt=""
+            onclick="openCertificate(this.src)">
+            
+            <div class="sertifikat-title">
+                Microsoft Office Specialist - Excel 2019
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="sertifikat-box">
+            <img src="Sertifikat Apresiasi(1).jpeg" alt=""
+            onclick="openCertificate(this.src)">
+
+            <div class="sertifikat-title">
+                Talkshow Nasional Etika Menulis di Era Digital
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="sertifikat-box">
+            <img src="Sertifikat Apresiasi(2).jpeg" alt=""
+            onclick="openCertificate(this.src)">
+
+            <div class="sertifikat-title">
+                Workshop Literasi Terra
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="sertifikat-box">
+            <img src="Sertifikat .jpeg" alt=""
+            onclick="openCertificate(this.src)">
+
+            <div class="sertifikat-title">
+                Victory Education Center
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="sertifikat-box">
+            <img src="Bridging Cultures in the Digital Era, An Internasional Talk on AI Governance and Society.jpeg" alt=""
+            onclick="openCertificate(this.src)">
+
+            <div class="sertifikat-title">
+                AI Governance and Society
+            </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="sertifikat-box">
+            <img src="SDGs101.jpeg" alt=""
+            onclick="openCertificate(this.src)">
+
+            <div class="sertifikat-title">
+                SDGs 101
+            </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="sertifikat-box">
+            <img src="Pelayanan Kesehatan.jpeg" alt=""
+            onclick="openCertificate(this.src)">
+
+            <div class="sertifikat-title">
+                Pelayanan Kesehatan
+            </div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="sertifikat-box">
+            <img src="Bahasa Inggris.jpeg" alt=""
+            onclick="openCertificate(this.src)">
+
+            <div class="sertifikat-title">
+                Bahasa Inggris
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- POPUP -->
+<div class="certificate-popup" id="certificatePopup">
+
+    <!-- TOMBOL SILANG -->
+    <span class="close-popup"
+    onclick="closeCertificate()">&times;</span>
+
+    <!-- GAMBAR -->
+    <img id="popupImage">
+
+</div>
+
+<!-- CONTACT -->
+    
+    <section class="contact" id="kontak">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <div class="contact-container">
+        
+        <!-- POSISI KIRI: Informasi Alamat dan Kontak -->
+        <div class="contact-info">
+        
+            <div class="info-item">
+                <i class='bx bxl-github'></i>
+                <h3><a href="https://github.com/devifadillah1001">devifadillah</a></h3>
+            </div>
+            <div class="info-item">
+                <i class='bx bxl-whatsapp'></i>
+                <h3><a href="mailto:devifadillah419@gmail.com">devifadillah419@gmail.com</a></h3>
+            </div>
+            <div class="info-item">
+                <i class='bx bx-envelope'></i>
+                <h3><a href="mailto:devifadillah419@gmail.com">devifadillah419@gmail.com</a></h3>
+            </div>
+            <div class="info-item">
+                <i class='bx bxl-instagram'></i>
+                <h3><a href="https://www.instagram.com/dvfdllh_0110?igsh=MXN2eTFrbjVhYTNvZQ==">@dvfdllh_</a></h3>
+            </div>
+        </div>
+
+        <!-- POSISI KANAN: Form Pengisian Pesan -->
+        <div class="contact-form">
+            <form id="commentForm">
+                <input type="text" name="name" placeholder="Nama Lengkap" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Pesan" required></textarea>
+                <button type="submit" id="submitBtn">Kirim Pesan</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- JAVASCRIPT -->
+ 
+    <script src="script.js"></script>
+
+</body>
+</html>
